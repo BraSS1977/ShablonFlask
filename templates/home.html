@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero-cards">
+    <div class="card">
+        <img src="{{ url_for('static', filename='Ivan.png') }}" alt="Герой 1">
+        <h2>Иван-царевич</h2>
+        <p>Смелый и добрый молодец, способный преодолевать трудности, сражаться с чудовищами и защищать свою родину.</p>
+        <a class="btn btn-primary" href="..\templates\about.html#hero1" role="button">Подробнее</a>
+    </div>
+    <div class="card">
+        <img src="{{ url_for('static', filename='Marya.jpg') }}" alt="Герой 2">
+        <h2>Марья-искусница</h2>
+        <p>Молодая рукодельница, похищенная подводным царём Водокрутом.
+        <br>
+        <br>
+        </p>
+        <a href="..\templates\about.html#hero2">Подробнее</a>
+    </div>
+
+    <div class="card">
+        <img src="{{ url_for('static', filename='Solovey.jpg') }}" alt="Герой 3">
+        <h2>Соловей-разбойник</h2>
+        <p>Главный враг народа и богатыря Ильи Муромца.<br><br><br></p>
+        <a href="..\templates\about.html#hero3" >Подробнее</a>
+    </div>
+
+
+    <!-- Добавьте больше карточек по мере необходимости -->
+</section>
+{% endblock %}
